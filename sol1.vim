@@ -1,7 +1,7 @@
 function! Flash()
     set cursorline cursorcolumn
     redraw
-    sleep 30m
+    sleep 10m
     set nocursorline nocursorcolumn
 endfunction
 
@@ -14,7 +14,7 @@ endfunction
 :let @p="::call Flash()\<C-M>"
 
 :let @a="@p I\<Esc>Wi-\<Esc>j0"
-:let N = 6
+:let N = 1000
 :let @b="gg0" . N . "@a" . "\<Esc>"
 ::normal @b
 
