@@ -1,7 +1,7 @@
 function! Flash()
     set cursorline cursorcolumn
     redraw
-    sleep 10m
+    sleep 5m
     set nocursorline nocursorcolumn
 endfunction
 
