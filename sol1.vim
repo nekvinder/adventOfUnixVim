@@ -1,7 +1,7 @@
 function! Flash()
     set cursorline cursorcolumn
     redraw
-    sleep 5m
+    sleep 3m
     set nocursorline nocursorcolumn
 endfunction
 
@@ -24,8 +24,6 @@ endfunction
 
 :let @e="@p A+ \<Esc>"
 :let @f=N-1."@e"
-::normal gg0
-::normal @f
 :%s/+//g
 :%s/-//g
 ::normal gg0
